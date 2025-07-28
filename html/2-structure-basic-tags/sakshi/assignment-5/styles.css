@@ -1,0 +1,36 @@
+.mydiv{
+    width: 700px;
+    border: 10px;
+}
+.gokarting{
+    color: brown;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-size: larger;
+}
+.highlight1{
+    color: rgb(166, 97, 231);
+    text-decoration:underline;
+    
+}
+.highlight2{
+    color: rgb(97, 97, 24);
+    font-weight: bold;
+    font-style: oblique;
+}
+.highlight3 {
+  color: crimson;
+  font-weight: bolder;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.highlight4{
+    color:rgb(151, 117, 31);
+    font-weight: 900;
+    text-decoration-line: overline;
+    text-decoration-color: black;
+    background-color: antiquewhite;
+}
