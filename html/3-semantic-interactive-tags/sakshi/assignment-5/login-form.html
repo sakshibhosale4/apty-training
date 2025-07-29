@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login From</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Login Form</h1>
+    </header>
+    <main>
+        <section>
+            <form action="#">
+                <label for="name" >Name :</label><br>
+                <input type="text" name="name" id="name" required placeholder="Enter your name">
+                <br>
+                <label for="email">Email :</label><br>
+                <input type="email" name="email" id="email" required placeholder="Enter your email">
+                <br>
+                <label for="phone">Phone number :</label><br>
+                <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}" title="Enter a 10 digit valid number">
+                <br>
+                <label for="password">Password :</label><br>
+                <input type="password" name="password" id="password" required minlength="6">
+                <br>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Your message here..." required></textarea><br>
+                <br>
+                <div class="button-group">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
