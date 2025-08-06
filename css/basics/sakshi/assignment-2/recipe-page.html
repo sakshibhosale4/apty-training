@@ -4,13 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicken Pizza - Recipe</title>
-    <link rel="stylesheet" href="recipe-page.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff8f0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #ff4500, #ff7f50);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        main {
+            max-width: 850px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        section {
+            padding: 20px;
+        }
+        #ingredients {
+            background-color: #e8f6ff;
+        }
+        #ingredients h2 {
+            color: #005f73;
+        }
+        #ingredients ul {
+            list-style-type: square;
+            padding-left: 22px;
+        }
+        #steps {
+            background-color: #fff3e0;
+        }
+        #steps h2 {
+            color: #c05621;
+        }
+        #steps ol {
+            padding-left: 22px;
+        }
+        #steps li {
+            margin-bottom: 8px;
+        }
+        #dish-image {
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        #dish-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+        }
+        #dish-image img:hover {
+            transform: scale(1.03);
+        }
+        #dish-image p {
+            font-style: italic;
+            margin-top: 8px;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Chicken Pizza</h1>
+        <h1>🍕 Chicken Pizza</h1>
     </header>
-
     <main>
         <section id="ingredients">
             <h2>Ingredients</h2>
@@ -39,12 +116,13 @@
                 <li>Spread pizza sauce evenly, followed by shredded chicken, bell peppers, and onions.</li>
                 <li>Top with mozzarella cheese, oregano, and chili flakes if desired.</li>
                 <li>Bake for 12–15 minutes until the crust is golden and cheese is melted and bubbly.</li>
-                <li>Slice and serve hot with your favorite dip or soda!</li>
+                <li>Slice and serve hot with your favorite dip dip and a refreshing drink!</li>
             </ol>
         </section>
         <section id="dish-image">
             <h2>Final Dish</h2>
-            <img src="https://breadboozebacon.com/wp-content/uploads/2023/05/BBQ-Chicken-Pizza-SQUARE.jpg"  alt="Chicken Pizza">
+            <img src="https://breadboozebacon.com/wp-content/uploads/2023/05/BBQ-Chicken-Pizza-SQUARE.jpg" 
+                 alt="Homemade Chicken Pizza">
             <p>A cheesy, flavorful chicken pizza fresh out of the oven, ready to enjoy!</p>
         </section>
     </main>
