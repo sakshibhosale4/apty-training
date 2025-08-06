@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Page - CSS Fundamentals</title>
+    <link rel="stylesheet" href="basic-web-page.css">
+    <style>
+        body {
+            background-color: #f8faff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        p {
+            font-size: 18px; 
+            color: #555;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 80%;
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #dab0b0;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1 id="main-heading">CSS Fundamentals</h1>
+        <p>This page is all about learning CSS Fundamentals. This page includes a heading, a paragraph, a list, and an image, styled using inline, internal, and external CSS, along with various CSS selectors</p>
+    </header>
+    <section>
+        <h2>Key Features of CSS</h2>
+        <ul>
+            <li>Controls colors, layouts, and typography</li>
+            <li style="color: blue;">Enables inline styling for quick, unique changes</li> 
+            <li>Makes websites responsive across devices</li>
+            <li>Adds animations, transitions, and hover effects</li>
+        </ul>
+    </section>
+    <section>
+        <h2>CSS in Action</h2>
+        <p>Below is an example of a styled webpage section using internal and external CSS. Notice how the image adapts to the screen size while maintaining quality and style.</p>
+        <img src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2025/03/illustration-of-a-laptop-with-the-css-logo-a-grid-in-the-behind-and-some-icons-around-it.png"alt="CSS Logo">
+    </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f0;
+    line-height: 1.6;
+    color: #333;
+}
+header {
+    background: rgb(108, 86, 86);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+main {
+    max-width: 850px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+section {
+    padding: 20px;
+}
+
+#ingredients {
+    background-color: #e8f6ff;
+}
+#ingredients h2 {
+    color: #005f73;
+}
+
+#ingredients ul {
+    list-style-type: square;
+    padding-left: 22px;
+}
+
+/* Preparation Steps Section */
+#steps {
+    background-color: #fff3e0;
+}
+
+#steps h2 {
+    color: #c05621;
+}
+
+#steps ol {
+    padding-left: 22px;
+}
+
+#steps li {
+    margin-bottom: 8px;
+}
+
+/* Image Section */
+#dish-image {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#dish-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#dish-image img:hover {
+    transform: scale(1.03);
+}
+
+#dish-image p {
+    font-style: italic;
+    margin-top: 8px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
