@@ -30,7 +30,7 @@ body {
   margin-top: 0.5rem;
 }
 .nav-list {
-  list-style:none;
+  list-style: none;
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
