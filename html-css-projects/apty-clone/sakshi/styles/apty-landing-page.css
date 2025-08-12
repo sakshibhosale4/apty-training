@@ -121,7 +121,7 @@ nav {
   width: 18px;
   height: auto;
   margin-left: 2px;
-  filter: brightness(0) invert(1); /* turns dark to white */
+  filter: brightness(0) invert(1);
 }
 
 .navigation-menu {
