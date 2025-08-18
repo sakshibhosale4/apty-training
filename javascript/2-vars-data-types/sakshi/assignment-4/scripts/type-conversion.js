@@ -31,7 +31,7 @@ result += `To String: ${String(_number)}<br>`;
 result += `To Number: ${Number(_number)}<br>`;
 result += `To Boolean: ${Boolean(_number)}<br><br>`;
 
-result += `<strong>Number (_bigint=75)</strong><br>`;
+result += `<strong>BigInt (_bigint=75)</strong><br>`;
 result += `To String: ${String(_bigint)}<br>`;
 result += `To Number: ${Number(_bigint)}<br>`;
 result += `To Boolean: ${Boolean(_bigint)}<br><br>`;
