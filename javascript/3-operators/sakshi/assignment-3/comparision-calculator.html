@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparision Operators - Calculator</title>
+    <link rel="stylesheet" href="./styles/comparision-calculator.css">
+</head>
+<body>
+    <header>
+        <h1>Comparision Operators - Calculator</h1>
+    </header>
+    <main>
+        <section class="comparision">
+            <div class="inputs">
+                <div class="input1">
+                    <label for="value1">Value 1:</label>
+                    <input type="text" id="value1" name="value1">
+                    <select id="type1">
+                        <option value="" disabled selected hidden>Select a datatype</option>
+                        <option value="string">String</option>
+                        <option value="number">Number</option>
+                        <option value="boolean">Boolean</option>
+                    </select>
+                </div>
+                <div class="input2">
+                    <label for="value2">Value 2:</label>
+                    <input type="text" id="value2" name="value2">
+                    <select id="type2" >
+                        <option value="" disabled selected hidden>Select a datatype</option>
+                        <option value="string">String</option>
+                        <option value="number">Number</option>
+                        <option value="boolean">Boolean</option>
+                    </select>
+                </div>
+            </div>
+            <div class="operators">
+                <button type="button" id="equal">==</button>
+                <button type="button" id="strict-equal">===</button>
+                <button type="button" id="not-equal">!=</button>
+                <button type="button" id="strict-not-equal">!==</button>
+                <button type="button" id="greater">&gt;</button>
+                <button type="button" id="less">&lt;</button>
+                <button type="button" id="greater-equal">&gt;=</button>
+                <button type="button" id="less-equal">&lt;=</button>
+                <button type="button" id="clear">Clear All</button>
+            </div>
+            <div id="result"></div>
+        </section>
+    </main>
+    <script src="./scripts/comparision-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logical Assignment Operators - Calculator</title>
+        <link rel="stylesheet" href="./styles/logical-assignment-calculator.css">
+    </head>
+    <body>
+        <header>
+            <h1>Logical Assignment Operators - Calculator</h1>
+        </header>
+        <main>
+            <section class="logical">
+                <div class="inputs">
+                    <div class="input1">
+                        <label for="value1">Value 1:</label>
+                        <input type="text" id="value1" name="value1">
+                        <select id="type1">
+                            <option value="" disabled selected hidden>Select a datatype</option>
+                            <option value="string">String</option>
+                            <option value="number">Number</option>
+                            <option value="boolean">Boolean</option>
+                        </select>
+                    </div>
+                    <div class="input2">
+                        <label for="value2">Value 2:</label>
+                        <input type="text" id="value2" name="value2">
+                        <select id="type2" >
+                            <option value="" disabled selected hidden>Select a datatype</option>
+                            <option value="string">String</option>
+                            <option value="number">Number</option>
+                            <option value="boolean">Boolean</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="operators">
+                    <button type="button" id="logical-and">&&=</button>
+                    <button type="button" id="logical-or">||=</button>
+                    <button type="button" id="logical-nullish">??=</button>
+                    <button type="button" id="clear" class="clear">Clear All</button>
+                </div>
+                <div id="result"></div>
+            </section>
+        </main>
+        <script src="./scripts/logical-assignment-calculator.js"></script>
+    </body>
+    </html>

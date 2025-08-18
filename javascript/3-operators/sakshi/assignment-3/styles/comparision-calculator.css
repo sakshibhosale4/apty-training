@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-top: 20px;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.comparision {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 40%;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input1,
+.input2 {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+input[type="text"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 0.8rem;
+}
+
+.operators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+  justify-content: center;
+}
+
+.operators button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  background: #8db7e4;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.operators button:hover {
+  background: #5a7da3;
+  transform: scale(1.05);
+}
+
+#clear {
+  background: #dc7b84;
+}
+
+#clear:hover {
+  background: #b95b65;
+}
+
+#result {
+  padding: 12px;
+  border-radius: 8px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  min-height: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+}

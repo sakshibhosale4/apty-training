@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Operators - Calculator</title>
+    <link rel="stylesheet" href="./styles/bitwise-calculator.css">
+</head>
+<body>
+    <header>
+        <h1>Bitwise Operators - Calculator</h1>
+    </header>
+    <main>
+        <section>
+            <div class="calculator">
+                <h2>CALCULATOR</h2>
+                <div class="input">
+                    <label for="input1">Value 1 : </label>
+                    <input type="number" id="input1" name="input1"><br>
+                    <label for="input2">Value 2 : </label>
+                    <input type="number" id="input2" name="input2">
+                </div>
+                <div class="operators">
+                    <button type="button" id="bitwise-and">&</button>
+                    <button type="button" id="bitwise-or">|</button>
+                    <button type="button" id="bitwise-xor">^</button>
+                    <button type="button" id="bitwise-not">~</button>
+                    <button type="button" id="left-shift">&lt;&lt;</button>
+                    <button type="button" id="right-shift">&gt;&gt;</button>
+                    <button type="button" id="clear">Clear</button>
+                </div>
+                <div id="display"></div>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/bitwise-calculator.js"></script>
+</body>
+</html>
