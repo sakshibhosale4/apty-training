@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Internal and External JS Execution Order</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".btn").addEventListener("click", () => {
+                alert("This is Internal JavaScript");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Inline, Internal, and External JS Execution Order</h1>
+    </header>
+    <main>
+        <section>
+            <hr>
+            <button class="btn" onclick="alert('This is Inline JavaScript')">Click Me</button>
+        </section>
+    </main>
+    <script src="./scripts/inline-internal-external-js.js" defer></script>
+</body>
+</html>

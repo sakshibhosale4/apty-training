@@ -1,0 +1,16 @@
+let result="";
+let _number=10;
+let _str="Apty";
+let _boolean=true;
+let _null=null;
+let _undefined=undefined;
+let _symbol=Symbol("id");
+let _object={name:"Sakshi",id:"LN417"}
+result += "Number: " + typeof( _number )+ "<br>";
+result += "String: " + typeof (_str) + "<br>";
+result += "Boolean: " + typeof (_boolean )+ "<br>";
+result += "Null: " + typeof (_null )+ "<br>";
+result += "Undefined: " + typeof (_undefined )+ " (special case!)<br>";
+result += "Symbol: " + typeof (_symbol )+ "<br>";
+result += "Object: " + typeof (_object )+ "<br>";
+document.getElementById("results").innerHTML=result;
