@@ -6,6 +6,7 @@ let _null = null;
 let _undefined = undefined;
 let _symbol = Symbol("id");
 let _object = { name: "Sakshi" };
+let _bigint=BigInt(75);
 function safeConvert(converter, value) {
     try {
         return converter(value);
@@ -29,6 +30,11 @@ result += `<strong>Number (_number=10)</strong><br>`;
 result += `To String: ${String(_number)}<br>`;
 result += `To Number: ${Number(_number)}<br>`;
 result += `To Boolean: ${Boolean(_number)}<br><br>`;
+
+result += `<strong>Number (_bigint=75)</strong><br>`;
+result += `To String: ${String(_bigint)}<br>`;
+result += `To Number: ${Number(_bigint)}<br>`;
+result += `To Boolean: ${Boolean(_bigint)}<br><br>`;
 
 result += `<strong>Boolean (_boolean=true)</strong><br>`;
 result += `To String: ${String(_boolean)}<br>`;
