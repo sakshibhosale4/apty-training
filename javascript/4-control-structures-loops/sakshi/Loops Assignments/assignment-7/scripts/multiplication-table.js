@@ -3,7 +3,7 @@ const generateBtn=document.querySelector("#generate-btn");
 const clearBtn=document.querySelector("#clear-btn")
 const result=document.getElementById("results");
 function generateTable() {
-    const num = Number(numberInput.value);
+    const num = Number(numberInput.value.trim());
     result.textContent = "";
     if (isNaN(num)) {
         result.textContent = "Please enter a valid number.";

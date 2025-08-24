@@ -5,8 +5,8 @@ const display = document.getElementById("display");
 const clearBtn= document.querySelector("#clear-btn");
 const calculateBtn= document.querySelector("#calculate-btn");
 function getValues() {
-  const val1 = Number(input1.value);
-  const val2 = Number(input2.value);
+  const val1 = Number(input1.value.trim());
+  const val2 = Number(input2.value.trim());
   const operator = operatorInput.value.trim();
   return { val1, val2, operator };
 }

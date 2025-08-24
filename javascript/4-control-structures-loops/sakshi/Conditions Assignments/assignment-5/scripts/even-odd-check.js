@@ -9,9 +9,7 @@ function checkOddEven() {
         result.textContent = "Invalid Input";
         return;
     }
-    if(num===0){
-        result.textContent=`${num} is Zero`;
-    }else if (num % 2 === 0) {
+    if (num % 2 === 0) {
         result.textContent = `${num} is Even Number.`;
     }else {
         result.textContent = `${num} is Odd Number.`;
