@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.grade-input {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.input {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  width: 52%;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#results {
+  font-size: 1.5rem;
+  margin-top: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+}
