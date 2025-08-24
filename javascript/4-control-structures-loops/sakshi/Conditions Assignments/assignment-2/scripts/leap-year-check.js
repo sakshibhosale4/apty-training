@@ -3,7 +3,7 @@ const input=document.getElementById("year");
 const button=document.querySelector("button");
 button.addEventListener("click",checkLeapYear);
 function checkLeapYear(){
-    const year=Number(input.value);
+    const year=Number(input.value.trim());
     let result="";
     if(isNaN(year) || year<0){
         result="Invalid input";
