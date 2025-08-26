@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking System - Error Objects</title>
+</head>
+<body>
+  <header>
+    <h1>Banking System - Withdraw Amount</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Enter Details</h2>
+      <form id="bankForm">
+        <label for="balance">Account Balance (₹):</label>
+        <input type="number" id="balance" placeholder="Enter balance" required>
+        <br><br>
+
+        <label for="withdraw">Withdrawal Amount (₹):</label>
+        <input type="number" id="withdraw" placeholder="Enter withdrawal amount" required>
+        <br><br>
+
+        <button type="button" id="withdrawBtn">Withdraw</button>
+        <button type="button" id="clearBtn">Clear</button>
+      </form>
+
+      <h3>Output</h3>
+      <p id="result"></p>
+      <p id="error"></p>
+    </section>
+  </main>
+  <script src="./scripts/banking-error.js"></script>
+</body>
+</html>
