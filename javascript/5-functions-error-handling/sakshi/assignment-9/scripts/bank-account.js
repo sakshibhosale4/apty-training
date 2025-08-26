@@ -33,6 +33,10 @@ document.getElementById("depositBtn").addEventListener("click", () => {
 
 document.getElementById("withdrawBtn").addEventListener("click", () => {
     const amount = Number(document.getElementById("withdrawAmount").value.trim());
+    if (isNaN(amount)) {
+        document.getElementById("output").textContent = "Please enter a valid number.";
+        return;
+    }
     document.getElementById("output").textContent = myAccount.withdraw(amount);
     document.getElementById("withdrawAmount").value = "";
 });

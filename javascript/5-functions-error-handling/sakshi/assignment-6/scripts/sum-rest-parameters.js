@@ -4,6 +4,10 @@ function sumAll(...numbers) {
 document.getElementById("sumForm").addEventListener("submit", function(event) {
     event.preventDefault();
     const input = document.getElementById("numbers").value;
+    if (!input.trim()) {
+        document.getElementById("result").textContent = "Please enter valid numbers.";
+        return;
+    }
     const numArray = input
         .split(",")
         .map(n => Number(n.trim()))

@@ -7,13 +7,13 @@ function higherOrderFilter(arr, callback) {
 }
 document.getElementById("filterBtn").addEventListener("click", () => {
   const numbers = numbersInput.value.split(",").map(num => Number(num.trim()));
-  const limit = parseInt(limitInput.value, 10);
-  result.textContent = "";
-  error.textContent = "";
   if (numbers.some(isNaN) || isNaN(limit)) {
     error.textContent = "Please enter valid numbers and limit.";
     return;
   }
+  const limit = parseInt(limitInput.value, 10);
+  result.textContent = "";
+  error.textContent = "";
   const filtered = higherOrderFilter(numbers, num => num <= limit);
   result.textContent = filtered.length > 0 ? filtered.join(", ") : "No numbers within the limit.";
 });

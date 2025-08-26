@@ -2,7 +2,10 @@ const factorial = (() => {
     const cache = {};
     function compute(n) {
         if (n === 0 || n === 1) return 1;
-        return n * compute(n - 1);
+        if (cache[n] !== undefined) return cache[n];
+        const result = n * compute(n - 1);
+        cache[n] = result;
+        return result;
     }
     return function(n) {
         if (cache[n] !== undefined) {
