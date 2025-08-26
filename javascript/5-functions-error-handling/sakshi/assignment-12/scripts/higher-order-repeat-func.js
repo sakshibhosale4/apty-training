@@ -19,7 +19,8 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     error.textContent = "Please enter valid text and a positive number.";
     return;
   }
-  if (count > 1000) {
+  const MAX_COUNT = 1000;
+  if (count > MAX_COUNT) {
     error.textContent = "Please enter a smaller number (max 1000).";
     return;
   }
