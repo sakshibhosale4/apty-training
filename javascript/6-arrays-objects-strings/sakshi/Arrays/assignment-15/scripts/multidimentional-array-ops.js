@@ -17,5 +17,8 @@ btn.addEventListener("click", () => {
   resultEl.textContent = "Transpose: " + JSON.stringify(transpose)
 })
 function transposeMatrix(matrix) {
-  return matrix[0].map((_, colIndex) => matrix.map(row => row[colIndex]))
+  if (!matrix || matrix.length === 0 || matrix[0].length === 0) {
+    return [];
+  }
+  return matrix[0].map((_, colIndex) => matrix.map(row => row[colIndex]));
 }

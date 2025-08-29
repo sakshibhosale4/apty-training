@@ -19,7 +19,7 @@ document.getElementById("spliceBtn").addEventListener("click", () => {
   try {
     arr = JSON.parse(input)
   } catch {
-    arr = input.split(",").map(color => color.trim().toLowerCase).filter(Boolean)
+    arr = input.split(",").map(color => color.trim().toLowerCase()).filter(Boolean)
   }
 
   if (!Array.isArray(arr) || arr.some(color => typeof color !== "string")) {

@@ -3,8 +3,8 @@ const dynamicObj = {};
 document.getElementById("addBtn").addEventListener("click", () => {
   const key = document.getElementById("keyInput").value.trim();
   const value = document.getElementById("valueInput").value.trim();
-  if (!key) {
-    alert("Key cannot be empty!");
+    if (!key) {
+    document.getElementById("output").textContent = "Error: Key cannot be empty!";
     return;
   }
   dynamicObj[key] = value;
