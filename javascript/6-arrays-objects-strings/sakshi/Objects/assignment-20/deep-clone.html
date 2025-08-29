@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Clone Object</title>
+</head>
+<body>
+  <header>
+    <h1>Deep Clone of Object</h1>
+  </header>
+
+  <main>
+    <section>
+      <label for="objectInput">Enter an object in JSON format:</label><br>
+      <textarea id="objectInput" rows="4" cols="40">
+{"a":1,"b":{"c":2,"d":[3,4]}}
+      </textarea>
+      <br><br>
+      <button id="cloneBtn">Deep Clone</button>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <pre id="output"></pre>
+    </section>
+  </main>
+
+  <script src="./scripts/deep-clone.js"></script>
+</body>
+</html>
