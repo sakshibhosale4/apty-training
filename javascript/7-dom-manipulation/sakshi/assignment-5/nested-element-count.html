@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Nested Element Count</title>
+</head>
+<body>
+  <header>
+    <h1>Nested Element Counter</h1>
+  </header>
+
+  <main>
+    <section id="parent1">
+      <h2>Parent 1</h2>
+      <div>
+        <p>Paragraph inside div</p>
+        <span>Span inside div</span>
+      </div>
+      <iframe title="Sample Iframe 1"></iframe>
+    </section>
+    <section id="parent2">
+      <h2>Parent 2</h2>
+      <div>
+        <div>
+          <p>Deep paragraph</p>
+        </div>
+      </div>
+      <span>Just a span</span>
+    </section>
+
+    <section>
+      <button id="countBtn">Count Elements</button>
+      <ul id="resultList"></ul>
+    </section>
+  </main>
+
+  <script src="./script/nested-element-count.js" defer></script>
+</body>
+</html>

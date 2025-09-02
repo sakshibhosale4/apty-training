@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move ShadowDOM Rows</title>
+</head>
+<body>
+  <header>
+    <h1>Move Rows inside Shadow DOM</h1>
+  </header>
+
+  <main>
+    <div id="shadowHost"></div>
+
+    <div>
+      <label for="rowNumber">Select Row (1–10): </label>
+      <input type="number" id="rowNumber" min="1" max="10">
+    </div>
+    <div>
+      <button id="up">Up</button>
+      <button id="down">Down</button>
+      <button id="top">Top</button>
+      <button id="bottom">Bottom</button>
+    </div>
+  </main>
+
+  <script src="./script/moving-shadowdom.js" defer></script>
+</body>
+</html>
