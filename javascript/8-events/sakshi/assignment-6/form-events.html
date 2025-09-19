@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Events Example</title>
+</head>
+<body>
+  <header>
+    <h1>Registration Form</h1>
+  </header>
+  <main>
+    <section>
+      <form id="registerForm">
+        <label>
+          Username:
+          <input type="text" id="username" required>
+          <span id="usernameError" style="color:red"></span>
+        </label>
+        <br><br>
+        <label>
+          Email:
+          <input type="email" id="email" required>
+          <span id="emailError" style="color:red"></span>
+        </label>
+        <br><br>
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <span id="passwordError" style="color:red"></span>
+        </label>
+        <br><br>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+  <script src="./scripts/form-events.js"></script>
+</body>
+</html>
