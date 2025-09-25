@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Relationships</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    input, button {
+      margin: 0.25rem;
+    }
+    #messages {
+      margin-top: 1rem;
+      background: #f2f2f2;
+      padding: 1rem;
+      border-radius: 5px;
+      min-height: 50px;
+    }
+    #messages div {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Window Relationships Example</h1>
+  </header>
+  <main>
+    <section>
+      <button id="openChild">Open Child Window</button>
+      <input type="text" id="msgInput" placeholder="Message to child">
+      <button id="sendMsg">Send Message to Child</button>
+    </section>
+    <section>
+      <h3>Messages Received:</h3>
+      <div id="messages"></div>
+    </section>
+  </main>
+  <script src="./scripts/window-relationships.js"></script>
+</body>
+</html>

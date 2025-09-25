@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      height: 2000px; 
+      padding: 1rem;
+    }
+    .controls {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .controls input {
+      width: 60px;
+    }
+    button {
+      margin-top: 0.5rem;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <label>
+      X:
+      <input type="number" id="xPos" value="0">
+    </label>
+    <label>
+      Y:
+      <input type="number" id="yPos" value="0">
+    </label>
+    <button id="scrollToBtn">Scroll to Position</button>
+    <button id="scrollUpBtn">Scroll Up 10px</button>
+    <button id="scrollDownBtn">Scroll Down 10px</button>
+  </div>
+
+  <main>
+    <h1>Scroll Example</h1>
+    <p>Scroll using inputs or buttons. The page has extra height to allow scrolling.</p>
+  </main>
+
+  <script src="./scripts/scrolling.js"></script>
+</body>
+</html>

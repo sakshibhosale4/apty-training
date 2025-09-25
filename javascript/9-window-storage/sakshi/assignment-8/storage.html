@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    input, button {
+      margin: 0.25rem;
+    }
+    #localData, #sessionData {
+      margin-top: 0.5rem;
+      background: #f2f2f2;
+      padding: 1rem;
+      border-radius: 5px;
+      min-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Local Storage and Session Storage Example</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Local Storage</h2>
+      <input type="text" id="localKey" placeholder="Key">
+      <input type="text" id="localValue" placeholder="Value">
+      <button id="setLocal">Set LocalStorage</button>
+      <div id="localData"></div>
+    </section>
+    <section>
+      <h2>Session Storage</h2>
+      <input type="text" id="sessionKey" placeholder="Key">
+      <input type="text" id="sessionValue" placeholder="Value">
+      <button id="setSession">Set SessionStorage</button>
+      <div id="sessionData"></div>
+    </section>
+  </main>
+  <script src="./scripts/storage.js"></script>
+</body>
+</html>

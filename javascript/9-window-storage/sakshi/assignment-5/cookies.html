@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    input {
+      margin: 0.25rem;
+    }
+    .message {
+      margin-top: 0.5rem;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cookies Example</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Set Cookie</h2>
+      <input type="text" id="cookieName" placeholder="Name">
+      <input type="text" id="cookieValue" placeholder="Value">
+      <button id="setCookieBtn">Set Cookie</button>
+      <div id="setMessage" class="message"></div>
+    </section>
+    <section>
+      <h2>Read Cookies</h2>
+      <button id="readCookiesBtn">Read Cookies</button>
+      <div id="cookiesDisplay"></div>
+      <div id="readMessage" class="message"></div>
+    </section>
+    <section>
+      <h2>Delete Cookie</h2>
+      <input type="text" id="deleteName" placeholder="Name">
+      <button id="deleteCookieBtn">Delete Cookie</button>
+      <div id="deleteMessage" class="message"></div>
+    </section>
+  </main>
+  <script src="./scripts/cookies.js"></script>
+</body>
+</html>
