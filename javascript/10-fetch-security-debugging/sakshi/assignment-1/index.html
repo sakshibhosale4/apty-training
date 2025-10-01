@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Products</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">E-Shop</a></h1>
+    <nav>
+      <a href="index.html">Search</a>
+      <a href="list.html">All Products</a>
+      <a href="view.html">View Product</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Search Products</h2>
+    <input type="text" id="searchInput" placeholder="Enter product name...">
+    <button onclick="searchProducts()">Search</button>
+    <div id="results" class="grid"></div>
+  </main>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
